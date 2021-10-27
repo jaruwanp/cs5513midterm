@@ -26,6 +26,10 @@ import {
 } from '@chakra-ui/icons';
 
 const Links = [
+  { 
+    label:'Home',
+    url: '/todo'
+  },
   {
     label:'To Do',
     url:'/todo'
@@ -57,7 +61,7 @@ const Header = ({ email, signOut }) => {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
-              <Link>
+              <Link href="/">
                  <Image
               priority
               src="/images/profile.jpg"
