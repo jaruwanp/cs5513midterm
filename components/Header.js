@@ -28,7 +28,7 @@ import {
 const Links = [
   { 
     label:'Home',
-    url: '/todo'
+    url: '/'
   },
   {
     label:'To Do',
