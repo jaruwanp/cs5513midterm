@@ -86,7 +86,7 @@ const Todo = () => {
       <>
       <Header email={AuthUser.email} signOut={AuthUser.signOut} />
       <div>
-        <Flex flexDir="column" maxW={800} align="center" justify="center" minH="100vh" m="auto" px={4}>
+        <Flex flexDir="column" maxW={800} align="center" justify="start" minH="100vh" m="auto" px={4}>
             <Flex justify="space-between" w="100%" align="center">
                 <Heading mb={4}>Welcome, {AuthUser.email}!</Heading>
                 <Flex>
