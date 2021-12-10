@@ -22,6 +22,7 @@ import getAbsoluteURL from '../utils/getAbsoluteURL'
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import Header from '../components/Header'
+import Layout from '../components/layout';
 
 
 const Event = () => {
@@ -92,7 +93,8 @@ const Event = () => {
       <>
        <Header email={AuthUser.email} signOut={AuthUser.signOut} />
       <div>
-      <Flex flexDir="column" maxW={800} align="center" justify="start" minH="100vh" m="auto" px={4}>
+      <Layout home>
+      <Flex flexDir="column" maxW={800} align="center" justify="start" minH="60vh" m="auto" px={4}>
         <Flex justify="space-between" w="100%" align="center">
           <Heading mb={4}>Welcome, {AuthUser.email}!</Heading>
           <Flex>
@@ -141,6 +143,7 @@ const Event = () => {
           )
         })}
       </Flex>
+      </Layout>
       </div>
       </>
     )

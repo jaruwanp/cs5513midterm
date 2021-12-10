@@ -41,6 +41,10 @@ const Links = [
   {
     label:'Contacts',
     url: '/contact'
+  },
+  {
+    label:'Headless WordPress',
+    url: '/wordpress'
   }
 ];
 
@@ -50,7 +54,7 @@ const Header = ({ email, signOut }) => {
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Box bg={useColorModeValue('#b9ddf7', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -84,7 +88,7 @@ const Header = ({ email, signOut }) => {
                   rounded={'md'}
                   _hover={{
                     textDecoration: 'none',
-                    bg: useColorModeValue('gray.200', 'gray.700'),
+                    bg: useColorModeValue('gray.200', 'gray.900'),
                   }}
                   href={link.url}>
                   {link.label}

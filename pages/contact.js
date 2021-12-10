@@ -22,6 +22,7 @@ import {
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 import Header from '../components/Header'
+import Layout from '../components/layout';
 
 
 const Contact = () => {
@@ -106,7 +107,8 @@ const [contacts, setContacts] = useState([])
       <>
        <Header email={AuthUser.email} signOut={AuthUser.signOut} />
       <div>
-      <Flex flexDir="column" maxW={1000} align="center" justify="start" minH="100vh" m="auto" px={4}>
+      <Layout home>
+      <Flex flexDir="column" maxW={1000} align="center" justify="start" minH="60vh" m="auto" px={4}>
         <Flex justify="space-between" w="100%" align="center">
           <Heading mb={4}>Welcome, {AuthUser.email}!</Heading>
           <Flex>
@@ -151,7 +153,8 @@ const [contacts, setContacts] = useState([])
                   <Text fontSize="xl" mr={4}>{i + 1}.</Text>
                  
                   <Link key={item.contactID} href={`contacts/${item.contactId}`}>
-                 <a title='view detail..'><h4><b> {item.contactName}{ }</b></h4>
+                 <a title='view detail..'><b> {item.contactName}{ }</b>
+                 <br/>
                  <i><small>Email: {item.contactEmail}, Tel:{item.contactPhone}</small></i>
                  </a>
                   </Link>
@@ -162,6 +165,7 @@ const [contacts, setContacts] = useState([])
           )
         })}
       </Flex>
+      </Layout>
       </div>
       </>
     )

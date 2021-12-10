@@ -31,6 +31,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 //lines 21-22 are firebase imports
 import Header from '../components/Header'
+import Layout from '../components/layout';
 
 const Todo = () => {
     const AuthUser = useAuthUser()
@@ -85,8 +86,10 @@ const Todo = () => {
     return (
       <>
       <Header email={AuthUser.email} signOut={AuthUser.signOut} />
+     
       <div>
-        <Flex flexDir="column" maxW={800} align="center" justify="start" minH="100vh" m="auto" px={4}>
+      <Layout home>
+        <Flex flexDir="column" maxW={800} align="center" justify="start" minH="60vh" m="auto" px={4}>
             <Flex justify="space-between" w="100%" align="center">
                 <Heading mb={4}>Welcome, {AuthUser.email}!</Heading>
                 <Flex>
@@ -94,7 +97,6 @@ const Todo = () => {
                     <IconButton ml={2} onClick={AuthUser.signOut} icon={<ArrowForwardIcon/>} />
                 </Flex>
             </Flex>
-
             <InputGroup>
                 <InputLeftElement
                     pointerEvents="none"
@@ -122,16 +124,17 @@ const Todo = () => {
                             borderRadius={5}
                             justifyContent="space-between"
                         >
-                            <Flex align="center">
+                        <Flex align="center">
                                 <Text fontSize="xl" mr={4}>{i + 1}.</Text>
                                 <Text>{t}</Text>
-                            </Flex>
-                            <IconButton onClick={() => deleteTodo(t)} icon={<DeleteIcon />} />
+                        </Flex>
+                        <IconButton onClick={() => deleteTodo(t)} icon={<DeleteIcon />} />
                         </Flex>
                     </React.Fragment>
                 )
             })}
         </Flex>
+        </Layout>
         </div>
         </>
     )

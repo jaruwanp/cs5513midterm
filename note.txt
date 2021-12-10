@@ -38,3 +38,13 @@ https://vercel.com/new
 
 https://santarosa-edu.zoom.us/rec/play/6gxUhZyCF-Zxt5HMro8Y2EU_-G7-ASYqjnZY2TUeL1WOAE7OjMGtPkrNI-0FJ5ID1jMwwJX-x9LNC2BL.kPl9heDvzoCHC5XH?startTime=1631212210000&_x_zm_rtaid=NCWoCMy_RTyOSoJd-rehxw.1632477178352.1b31eccb1043e5f6376aebf9c87dcac4&_x_zm_rhtaid=246
 2.07
+npm install got@9.6.0
+
+npx kill-port 3000
+ 
+
+
+ npx create-react-app react-carousel
+cd react-carousel. npm start
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'; npm start

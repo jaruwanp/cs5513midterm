@@ -1,6 +1,7 @@
 
 import React from 'react'
 import '../styles/globals.css'
+import '../styles/bootstrap.min.css'
 import initAuth from '../utils/initAuth'
 import { ChakraProvider } from "@chakra-ui/react"
 

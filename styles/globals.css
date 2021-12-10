@@ -44,6 +44,7 @@ h1 {
   letter-spacing: 0px;
   padding-top: 0px;
   text-transform: uppercase;
+  font-size: 2em;
 }
 h2 {
   font-family: 'Oswald', sans-serif;
@@ -92,10 +93,11 @@ h6 {
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   text-shadow: 1px 1px 3px  #999797;
-   border-bottom: solid 1px #a5a4a4;
+  border-top: solid 1px #c2bfbf;
+   border-bottom: solid 1px #c2bfbf;;
 }
 .nav_bg {
   background-color: #f7f7f7;
@@ -105,4 +107,69 @@ h6 {
 }
 .pd00 {
   padding: 0px;
+}
+
+.H1{
+  background-color: #f7f7f7;
+  color: #816415;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 1px 1px 3px  #999797;
+   
+   border-top: solid 1px #a5a4a4;
+}
+
+
+.ccaption{
+  
+  color: #6c1414;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 1px 1px 3px  #999797;
+  cursor:pointer;
+}
+
+.ccaption2{
+color: #000000;
+font-size: 1.5rem;
+}
+.ccaption3{
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  }
+.alink{
+cursor:pointer;
+
+}
+
+.showCase{
+  text-align: center;
+  cursor:pointer;
+/*    vertical-align: top; */
+margin: 0px 0px;
+/*  background-color: blue;*/
+
+}
+
+.showCase img{
+transition: 0.5s;
+padding: 0px;
+border-width:1px;
+border-style: solid;
+border-color: white;
+box-shadow:0px 0px 15px 5px rgba(0, 0, 0, 0.55);  
+}
+
+.showCase img:hover{
+filter: brightness(100%) saturate(130%) contrast(150%) ;
+border-color:#ff5f3d;
+transition: 0.5s;
+transform: scale(1.03);
+
 }
